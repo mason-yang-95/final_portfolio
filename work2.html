@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3D Design</title>
+<link rel="stylesheet" href="css/main.css">
+<script src="js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/query.lazyload.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42371654-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<link rel="stylesheet" type="text/css" href="demo.css" />
+<link rel="stylesheet" type="text/css" href="fullscreennav.css" />
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+    $('#toggle').click(function() {
+       $(this).toggleClass('active');
+       $('#fullnav').toggleClass('open');
+      });
+      });
+</script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+    .slides {
+        padding: 0;
+        width: 1300px;
+        height: 700px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .slides * {
+        user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+    }
+    
+    .slides input { display: none; }
+    
+    .slide-container { display: block; }
+    
+    .slide {
+        top: 0;
+        opacity: 0;
+        width: 1220px;
+        height: 700px;
+        display: block;
+        position: absolute;
+    
+        transform: scale(0);
+    
+        transition: all .7s ease-in-out;
+    }
+    
+    .slide img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .nav1 label {
+        width: 200px;
+        height: 100%;
+        display: none;
+        position: absolute;
+    
+          opacity: 0;
+        z-index: 9;
+        cursor: pointer;
+    
+        transition: opacity .2s;
+    
+        color: #FFF;
+        font-size: 156pt;
+        text-align: center;
+        line-height: 380px;
+        font-family: "Varela Round", sans-serif;
+        background-color: rgba(255, 255, 255, .3);
+        text-shadow: 0px 0px 15px rgb(119, 119, 119);
+    }
+    
+    .slide:hover + .nav1 label { opacity: 0.5; }
+    
+    .nav1 label:hover { opacity: 1; }
+    
+    .nav1 .next { right: 0; }
+    
+    input:checked + .slide-container  .slide {
+        opacity: 1;
+    
+        transform: scale(1);
+    
+        transition: opacity 1s ease-in-out;
+    }
+    
+    input:checked + .slide-container .nav1 label { display: block; }
+    
+    .nav1-dots {
+        width: 100%;
+        bottom: 9px;
+        height: 11px;
+        display: block;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .nav1-dots .nav1-dot {
+        top: -5px;
+        width: 11px;
+        height: 11px;
+        margin: 0 4px;
+        position: relative;
+        border-radius: 100%;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .nav1-dots .nav1-dot:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    input#img-1:checked ~ .nav1-dots label#img-dot-1,
+    input#img-2:checked ~ .nav1-dots label#img-dot-2,
+    input#img-3:checked ~ .nav1-dots label#img-dot-3,
+    input#img-4:checked ~ .nav1-dots label#img-dot-4,
+    input#img-5:checked ~ .nav1-dots label#img-dot-5,
+    input#img-6:checked ~ .nav1-dots label#img-dot-6,
+    input#img-7:checked ~ .nav1-dots label#img-dot-7,
+    input#img-8:checked ~ .nav1-dots label#img-dot-8,
+    input#img-9:checked ~ .nav1-dots label#img-dot-9,
+    input#img-10:checked ~ .nav1-dots label#img-dot-10,
+    input#img-11:checked ~ .nav1-dots label#img-dot-11{
+        background: rgba(0, 0, 0, 0.8);
+
+      
+    }
+    </style>
+<body>
+    <div class="fullnavBtn" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+      
+      <div class="fullnav" id="fullnav">
+        <nav class="fullnavMenu">
+          <ul>
+              <li ><a href="index.html">GREETING</a></li>
+              <li><a href="about.html">ABOUT ME</a></li>
+              <li><a href="work.html">WORKS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+
+<script src="js/app.min.js" type="text/javascript" charset="utf-8"></script>
+
+<div class="page-wrapper">
+
+  <main class="content">
+
+
+  <header class="container post clearfix">
+    <div class="nav-trigger title"> 3D DESIGN </div>
+  </header>
+  <article class="container">
+    <ul class="slides">
+   
+      <li class="slide-container">
+      <div class="slide">
+      </div>
+    <h2>SUMMARY</h2>
+
+<p>I learned Maya program through 3D visualization class.  I visualized an existing board game in 3D and proceeded with a chess project that I designed.  The board game project is a game called Sorry!, which is visualized as it is one of the representative games.  The Chess Project created a new chess using world landmarks..</p>
+<hr />
+   <figure>
+<img src="./images/9.jpg" />
+</figure>
+
+
+<h2>SKILLS</h2>
+
+<p>3D Maya Design</p>
+<p>Prototyping</p>
+<p>Design Research</p>
+<hr />
+
+
+
+<figure>
+<img src="images/audfuf.png" />
+</figure>
+
+<h2>ROLE</h2>
+<p>3D Designer</p>
+
+<hr />
+
+
+<figure>
+<img src="images/8.png" />
+</figure>
+<h2>OBJECTIVE</h2>
+
+<p>3D Design Skills</p>
+
+<hr />
+
+
+
+<figure>
+    <ul class="slides">
+        <input type="radio" name="radio-btn" id="img-1" checked />
+        <li class="slide-container">
+        <div class="slide">
+            <img src="images/6.jpeg" />
+            </div>
+        <div class="nav1">
+          <label for="img-2" class="prev">&#x2039;</label>
+          <label for="img-2" class="next">&#x203a;</label>
+        </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-2" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/7.png" />
+              
+            </div>
+        <div class="nav1">
+          <label for="img-1" class="prev">&#x2039;</label>
+          <label for="img-1" class="next">&#x203a;</label>
+        </div>
+        </li>
+    
+  
+        </li>
+        <li class="nav1-dots">
+          <label for="img-1" class="nav1-dot" id="img-dot-1"></label>
+          <label for="img-2" class="nav1-dot" id="img-dot-2"></label>
+
+        </li>
+    </ul>
+</figure>
+<h2>ABOUT</h2>
+<p>I used Adobe Illustrator to develop the concepts. From there, I built the 3D objects in Maya and textured them. I added the appropriate cameras within the space to take a final product shot.  The Charcuterie Board concept was chosen to 3D render. </p>
+
+<hr />
+
+
+
+<hr />
+
+
+
+
+</div>
+
+</body>
+</html>
